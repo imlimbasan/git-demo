@@ -1,0 +1,243 @@
+* {
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+header {
+    background-color: #333;
+    margin: 2rem 2.3rem 0rem 2.3rem;
+    padding: 0.65rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    float:right;
+    width: 95%;
+    z-index: 200000;
+    top:2rem;
+    position:sticky;
+}
+
+
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top:0;
+    position:sticky;
+ }
+
+.logo {
+    background-color: #333;
+    color: white;
+    margin-left: 1rem;
+}
+
+
+.nav-links {
+    background-color: #333;
+    list-style: none;
+}
+
+.nav-links li {
+    float: right;
+    padding:0px 0.7rem;
+}
+
+.nav-links a {
+    background-color: #333;
+    text-decoration: none;
+    color: white;
+}
+
+.alt-text{
+    display: none;
+}
+.alt-text1{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        margin: 2rem 0.4rem 2rem 0.4rem;
+    }
+
+    .nav-links li {
+        margin-right: 0.3rem;
+        float: right;
+    }
+    .nav-links li:last-child {
+        margin-right: 0rem; 
+    }
+
+    .nav-links li a {
+        display: none;
+    }
+    .li6 .li7, .li8, .li9{
+        display: none;
+    }
+  
+    .nav-links li .alt-text {
+        display: inline;
+    }
+}
+
+
+@media only screen and (max-width: 325px) {
+    header {
+        margin: 2rem 0.4rem 2rem 0.4rem;
+    }
+
+  
+
+    .nav-links li {
+        margin-right: 0.3rem;
+        padding: 0 0.4 ;
+    }
+
+    .nav-links li a:not(.alt-text1) {
+        display: none;
+    }
+
+    .alt-text {
+        display: none;
+    }
+
+    .nav-links li a.alt-text1 {
+        display: inline;
+    }
+}
+
+.container1{
+background-image: url("./images/constelatie.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.continut1 h1{
+    text-align: center;
+    text-shadow: 3px 3px 2px black, 0 0 325px rgb(0, 0, 0);
+}
+
+.continut1{
+    padding: 16rem 0rem;
+}
+
+
+.container2 {
+    background-color: #333;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-top: -3rem;
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0);
+}
+
+.continut2{
+    font-size: 2rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.continut3{
+    font-size: 1.5rem;
+    width:50%;
+}
+.continut4{
+    font-size: 1.5rem;
+    width:50%;
+}
+
+@media only screen and (max-width: 1155px) {
+
+    .container2{
+        margin: 0rem 1rem;
+    }
+    }
+
+.container3 {
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.ccontinut1{
+    font-size: 2rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.ccontinut2{
+    width:50%;
+}
+.ccontinut2 img{
+    width: 100%;
+}
+
+.ccontinut3{
+    font-size: 1.5rem;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccontinut3 a{ 
+        background-color: #f44336;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+   
+@media only screen and (max-width: 768px) {
+
+.ccontinut2{
+    width:100%;
+}
+.ccontinut3{
+    font-size: 1.5rem;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccontinut1{
+    flex-direction: row;
+}
+.ccontinut1 {
+    flex-direction: column; 
+}
+}
+
+.containercarusel{
+    background-image: url("./images/abstract.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carusel{
+
+text-align: center;
+    text-shadow: 3px 3px 2px black, 0 0 325px rgb(0, 0, 0);
+    padding: 16rem 0rem;
+}
